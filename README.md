@@ -1,5 +1,5 @@
 # projet-initial
 
-* [wiki]
-  (https://wiki.tikenix.me/)
+* [wiki](https://wiki.tikenix.me/)
+  
 
