@@ -1,0 +1,22 @@
+[16-Nov-2018 15:08:57 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php on line 24
+[16-Nov-2018 15:08:58 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php on line 24
+[16-Nov-2018 15:08:59 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php on line 24
+[16-Nov-2018 15:09:00 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php on line 24
+[16-Nov-2018 15:10:36 UTC] PHP Parse error:  syntax error, unexpected 'navigation2' (T_STRING), expecting ',' or ';' in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php on line 24
+[16-Nov-2018 15:10:36 UTC] PHP Parse error:  syntax error, unexpected 'navigation2' (T_STRING), expecting ',' or ';' in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php on line 24
+[16-Nov-2018 15:12:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function menu() in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php on line 33
+[16-Nov-2018 15:13:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function menu() in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php on line 33
+[16-Nov-2018 15:13:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function menu() in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php on line 33
+[16-Nov-2018 15:15:47 UTC] PHP Parse error:  syntax error, unexpected 'navigation2' (T_STRING), expecting ',' or ';' in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php on line 16
+[16-Nov-2018 15:16:22 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php on line 16
+[16-Nov-2018 15:16:23 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php on line 16
+[16-Nov-2018 15:16:23 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/tim/public_html/etudiants/2018/descampsp/Web-Domaine-multi/index.php on line 16
