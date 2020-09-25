@@ -1,9 +1,5 @@
 # projet-initial
 
--tet
+* [wiki]
+(https://wiki.tikenix.me/)
 
--tet
-
--tete
-
--tetet
