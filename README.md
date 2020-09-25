@@ -1,9 +1,9 @@
 # projet-initial
 
-*tet
+-tet
 
-*tet
+-tet
 
-*tete
+-tete
 
-*tetet
+-tetet
