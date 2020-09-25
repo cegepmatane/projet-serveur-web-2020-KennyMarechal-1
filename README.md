@@ -1,5 +1,12 @@
 # projet-initial
+## Kenny Marechal
 
-* [wiki](https://wiki.tikenix.me/)
+* [lien wiki](https://wiki.tikenix.me/)
+
+* [lien blog](https://blog.tikenix.me/)
+
+* [lien wordpress](https://tikenix.zonedns.education/)
+
+* [lien picocms](https://tikenix.me/)
   
 
