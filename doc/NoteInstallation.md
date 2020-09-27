@@ -1,9 +1,9 @@
 # Installation du serveur
 
 # Table of contents
-1. [Ouverture du firewall](#Ouverture du firewall)
-2. [Installation du serveur web](#Installation du serveur web)
-3. [Ouverture du firewall](#Ouverture du firewall)
+1. ![Ouverture du firewall](#Ouverture du firewall)
+2. ![Installation du serveur web](#Installation du serveur web)
+3. ![Ouverture du firewall](#Ouverture du firewall)
 
 - ##  Ouverture du firewall
 
