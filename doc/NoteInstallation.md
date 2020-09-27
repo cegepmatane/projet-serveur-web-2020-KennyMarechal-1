@@ -156,8 +156,36 @@ sudo usermod --shell /usr/local/bin/sftponly blog.tikenix.me
 
 sudo usermod --shell /usr/local/bin/sftponly tikenix.zonedns.education
 
+sudo nano /usr/local/bin/sftponly
 
+![](https://github.com/cegepmatane/projet-serveur-web-2020-KennyMarechal-1/blob/master/doc/images/retirer_shell.png)
 
+sudo chmod +x /usr/local/bin/sftponly
+
+- ## Créer un groupe et y inclure l'utilisateur qui va gérer plusieurs sites
+
+	- sudo groupadd legroupe
+	- sudo usermod -a -G legroupe webmestre
+
+- ## Inclure l'utilisateur du service web dans le groupe
+
+	- sudo usermod -a -G legroupe www-data
+
+- ## Appliquer le groupe à tous les répertoires accessibles
+
+	- sudo chown -R :legroupe /var/www/tikenix.me
+	- sudo chown -R :legroupe /var/www/wiki.tikenix.me
+	- sudo chown -R :legroupe /var/www/blog.tikenix.me
+	- sudo chown -R :legroupe /var/www/tikenix.zonedns.education
+
+- ## Créer un utilisateur pour programmer tous les sites
+
+	- sudo adduser programmeur
+
+- ## L'ajouter au groupe legroupe mais aussi au www-data
+
+	- sudo usermod -a -G legroupe programmeur
+	- sudo usermod -a -G www-data programmeur
 
 
 
