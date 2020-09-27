@@ -53,7 +53,7 @@
 - ## Tester le php
 
 	- sudo nano /var/www/html/info.php
-		- "<?php phpinfo(); ?>"
+		- " php phpinfo(); "
 		- Sauver et quitter
 	- tester : http://ip.du.serveur/info.php
 	- sudo rm /var/www/html/info.php
