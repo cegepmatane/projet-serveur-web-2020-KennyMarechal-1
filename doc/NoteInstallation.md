@@ -104,9 +104,11 @@
 - ## ajouter le fichier de configuration
 
 	- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/tikenix.me.conf
-	- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/wiki.tikenix.me.conf			![](/images/config_exemple.png)
+	- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/wiki.tikenix.me.conf
 	- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/blog.tikenix.conf
 	- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/tikenix.zonedns.education.conf
+
+![](/images/config_exemple.png)
 
 - ## activer le nouveau site
 
