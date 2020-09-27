@@ -13,7 +13,7 @@
 	- sudo ufw enable
 
 # Installation de base de données
-- ##Installer mysql 
+- ## Installer mysql 
 	- sudo apt install mysql-server
 	- sudo mysql_secure_installation
 		- On vous demandera si vous désirez configurer le VALIDATE PASSWORD PLUGIN → Répondre “N”
