@@ -108,6 +108,8 @@
 	- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/blog.tikenix.conf
 	- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/tikenix.zonedns.education.conf
 
+![](https://github.com/cegepmatane/projet-serveur-web-2020-KennyMarechal-1/blob/master/doc/images/config_exemple.png)
+
 - ## activer le nouveau site
 
 	- sudo a2ensite tikenix.me.conf
