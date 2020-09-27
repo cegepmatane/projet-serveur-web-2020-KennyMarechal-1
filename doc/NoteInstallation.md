@@ -211,5 +211,44 @@ sudo chmod +x /usr/local/bin/sftponly
 	- sudo usermod -a -G legroupe programmeur
 	- sudo usermod -a -G www-data programmeur
 
+# Installer Wordpress avec base de donneée
 
+- mysql -u root -p
+- mysql> CREATE DATABASE wordpress.* TO 'wordpressuser'@' 'localhost' IDENTIFIED BY 'password';
+- mysql> FLUSH PRIVILEGES;
+- mysql> EXIT;
 
+## Installer PHP Extensions
+
+- sudo apt-get update
+- sudo apt-get install php-curl php-gb php-mcrypt php-xml php-xmlrpc
+- sudo systemctl restart apache2
+
+## Adjuster la configuration Appache's
+
+- sudo nano /etc/apache2/apache2.conf
+- sudo apache2ctl configtest
+- sudo systemctl restart apache2
+
+## Teélécharger Wordpress
+
+- cd /tmp
+- curl -O https://wordpressorg/latest.tar.gz
+- tar xzvf latest.tar.gz
+- touch /tmp/worpress/.htaccess
+- chomd 660 /tmp/wordpress/.htaccess
+- cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php
+- sudo cp -a /tmp/wordpress/. /var/www/tikenix.zondns.education
+
+## Configurer le répertoire Wordpress
+
+- sudo chown -R tikenix.zonedns.education:www-data /var/www/tikenix.zonedns.education
+- sudo find /var/www/tikenix.zonedns.education -type d -exec chmod g+s {} \;
+- sudo chomd g+w /var/www/tikenix.zonedns.education/wp-content
+- sudo chomd -R g+w /var/www/tikenix.zondns.education/themes
+- sudo chomd -R g+w /var/www/tikenix.zondns.education/plugins
+
+## Configurer le fichier de Wordpress
+
+- sudo curl -s https://api.wordpress.org/secret-key/1.1/salt/
+- sudo nano /var/www/tikenix.zonedns.education/wp-config.php
