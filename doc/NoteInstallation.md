@@ -124,11 +124,25 @@
 
 User password Site associé(*propriété*)
 
-sudo useradd webmestre                 sudo passwd "password" sudo chown webmestre /var/www/
-sudo useradd tikenix.me                sudo passwd "password" sudo chown -R tikenix.me  /var/www/tikenix.me
-sudo useradd wiki.tikenix.me           sudo passwd "password" sudo chown -R wiki.tikenix.me /var/www/wiki.tikenix.me
-sudo useradd blog.tikenix.me           sudo passwd "password" sudo chown -R blog.tikenix.me /var/www/blog.tikenix.me
-sudo useradd tikenix.zonedns.education sudo passwd "password" sudo chown -R tikenix.zonedns.education /var/www/tikenix.zonedns.education
+sudo useradd webmestre
+sudo passwd "password" 
+sudo chown webmestre /var/www/
+
+sudo useradd tikenix.me
+sudo passwd "password" 
+sudo chown -R tikenix.me  /var/www/tikenix.me
+
+sudo useradd wiki.tikenix.me
+sudo passwd "password" 
+sudo chown -R wiki.tikenix.me /var/www/wiki.tikenix.me
+
+sudo useradd blog.tikenix.me           
+sudo passwd "password" 
+sudo chown -R blog.tikenix.me /var/www/blog.tikenix.me
+
+sudo useradd tikenix.zonedns.education
+sudo passwd "password" 
+sudo chown -R tikenix.zonedns.education /var/www/tikenix.zonedns.education
 
 
 
