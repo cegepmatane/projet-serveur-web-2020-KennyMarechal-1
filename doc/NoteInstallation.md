@@ -112,8 +112,6 @@
  
 ![](https://github.com/cegepmatane/projet-serveur-web-2020-KennyMarechal-1/blob/master/doc/images/config_exemple.png)
 
-
-
 - ## activer le nouveau site
 
 	- sudo a2ensite tikenix.me.conf
@@ -121,6 +119,32 @@
 	- sudo a2ensite blog.tikenix.conf
 	- sudo a2ensite tikenix.zonedns.education.conf
 	- sudo systemctl reload apache2
+
+# Créer des webmestres
+
+|User                                   |password               |Site associé(*propriété*)                                       |
+|: -----------------------------------: |: -------------------: |: ------------------------------------------------------------: |
+| sudo useradd webmestre                | sudo passwd "password"|sudo chown webmestre /var/www/                                  |
+| sudo useradd tikenix.me               | sudo passwd "password"|sudo chown -R www.monsite.com /var/www/www.mon-site.com         |
+| sudo useradd wiki.tikenix.me          | sudo passwd "password"|sudo chown -R www.monsite.com /var/www/tikenix.me               |
+| sudo useradd blog.tikenix.me          | sudo passwd "password"|sudo chown -R www.monsite.com /var/www/wiki.tikenix.me          |
+| sudo useradd tikenix.zonedns.education| sudo passwd "password"|sudo chown -R www.monsite.com /var/www/tikenix.zonedns.education|
+
+
+
+
+
+sudo usermod --shell /usr/local/bin/sftponly www.monsite.com
+
+
+sudo usermod --shell /usr/local/bin/sftponly www.monsite.com
+
+
+sudo usermod --shell /usr/local/bin/sftponly www.monsite.com
+
+
+sudo usermod --shell /usr/local/bin/sftponly www.monsite.com
+
 
 
 
