@@ -122,7 +122,7 @@
 
 # Créer des webmestres
 
-User password Site associé(*propriété*)
+## User password Site associé(*propriété*)
 
 - sudo useradd webmestre
 - sudo passwd "password"
@@ -144,18 +144,13 @@ User password Site associé(*propriété*)
 - sudo passwd "password" 
 - sudo chown -R tikenix.zonedns.education /var/www/tikenix.zonedns.education
 
-
-
-
+## Enlever le shell aux webmestre
 
 sudo usermod --shell /usr/local/bin/sftponly www.monsite.com
 
-
 sudo usermod --shell /usr/local/bin/sftponly www.monsite.com
 
-
 sudo usermod --shell /usr/local/bin/sftponly www.monsite.com
-
 
 sudo usermod --shell /usr/local/bin/sftponly www.monsite.com
 
