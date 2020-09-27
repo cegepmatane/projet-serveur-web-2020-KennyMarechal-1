@@ -120,13 +120,13 @@
 	- sudo a2ensite tikenix.zonedns.education.conf
 	- sudo systemctl reload apache2
 
-# ACTIVER LE HTTPS
+# Activer le HTTPS
 
-- ## INSTALLER CERTBOT
+- ## Installer CERTBOT
 
 	- sudo apt install certbot python3-certbot-apache
 
-- ## CONFIGURER APACHE
+- ## Configurer APACHE
 
 	- sudo nano /etc/apache2/sites-available/tikenix.me.conf
 		- ServerName tikenix.me
@@ -135,7 +135,7 @@
 	- sudo ufw delete allow 'Apache'
 	- sudo ufw status
 
-- ## OBTENIR LE CERTIFICAT
+- ## Obtenir le certificat
 
 	- sudo certbot --apache
 		- entrer un email
@@ -146,7 +146,7 @@
 
 # Créer des webmestres
 
-## User password Site associé(*propriété*)
+## Créer *User*, *password*, Site associé(*propriété*)
 
 - sudo useradd webmestre
 - sudo passwd "password"
