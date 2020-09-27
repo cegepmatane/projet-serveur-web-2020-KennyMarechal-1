@@ -1,23 +1,81 @@
 # Installation du serveur
 
 - ##  Ouverture du firewall
+
 	- sudo ufw allow OpenSSH
 	- sudo ufw enable
+
 - ## Installation du serveur web
+
 	- sudo apt update
 	- sudo apt install apache2
+
 - ## Ouverture du firewall
+
 	- sudo ufw app list
 	- sudo ufw app info "Apache Full"
 	- sudo ufw allow in "Apache Full"
 	- sudo ufw enable
 
 # Installation de base de données
+
 - ## Installer mysql 
+
 	- sudo apt install mysql-server
 	- sudo mysql_secure_installation
 		- On vous demandera si vous désirez configurer le VALIDATE PASSWORD PLUGIN → Répondre “N”
 		- Choisir le mot de passe root
 		- Disallow root login remotely? N
 		- Répondre “Y” à toutes les autres questions
+
+- ## Réinitialiser le mot de passe 
+
+	- sudo mysql
+		- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'passwordXYZ';
+		- FLUSH PRIVILEGES;
+		- exit
+	- sudo service mysql start
+
+# Installation du php
+
+- ## Installer le module php
+
+	- sudo apt install php libapache2-mod-php php-mysql
+	- pour ubuntu 18.04 LTS : sudo a2enmod php7.2 pour ubuntu 20.04 LTS : sudo a2enmod php7.4
+
+- ## Prioriser index.php à index.html
+
+	- sudo nano /etc/apache2/mods-enabled/dir.conf
+		- Dépacer index.php à la suite de DirectoryIndex
+		- Sauver et quitter
+	- sudo systemctl restart apache2
+
+- ## Tester le php
+
+	- sudo nano /var/www/html/info.php
+		- <?php phpinfo(); ?>
+		- Sauver et quitter
+	- tester : http://ip.du.serveur/info.php
+	- sudo rm /var/www/html/info.php
+
+# Options de php
+
+- ## Activation de modules (parfois automatiquement activé)
+
+	- pour ubuntu 18.04 LTS : cd /etc/php/7.2/apache2 pour ubuntu 20.04 LTS : cd /etc/php/7.4/apache2
+	- sudo nano php.ini
+		- extension=mysqli
+		- extension=pdo_mysql
+	- sudo systemctl restart apache2 && sudo systemctl restart mysql
+
+- ## Affichage des erreurs php (serveur dev uniquement)
+
+	- pour ubuntu 18.04 LTS : cd /etc/php/7.2/apache2 pour ubuntu 20.04 LTS : cd /etc/php/7.4/apache2
+	- sudo nano php.ini
+		- display_errors = On
+		- display_startup_errors = On
+		- log_errors = On
+		- mysqlnd.debug = /var/log/php-mysql
+	- sudo systemctl restart apache2 && sudo systemctl restart mysql
+
 
