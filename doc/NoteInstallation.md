@@ -122,7 +122,7 @@
 
 # Créer des webmestres
 
-|User 1                                 |password 2             |Site associé(*propriété*) 3                                                      |
+| User 1                                  | password 2              | Site associé(*propriété*) 3                                                |
 |: -------------------------------------: |: ---------------------: |: -------------------------------------------------------------------------: |
 | 1 sudo useradd webmestre                | 1 sudo passwd "password"| 1 sudo chown webmestre /var/www/                                            |
 | 2 sudo useradd tikenix.me               | 2 sudo passwd "password"| 2 sudo chown -R tikenix.me  /var/www/tikenix.me                             |
