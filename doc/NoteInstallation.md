@@ -146,13 +146,15 @@
 
 ## Enlever le shell aux webmestre
 
-sudo usermod --shell /usr/local/bin/sftponly www.monsite.com
+sudo usermod --shell /usr/local/bin/sftponly webmestre
 
-sudo usermod --shell /usr/local/bin/sftponly www.monsite.com
+sudo usermod --shell /usr/local/bin/sftponly tikenix.me
 
-sudo usermod --shell /usr/local/bin/sftponly www.monsite.com
+sudo usermod --shell /usr/local/bin/sftponly wiki.tikenix.me
 
-sudo usermod --shell /usr/local/bin/sftponly www.monsite.com
+sudo usermod --shell /usr/local/bin/sftponly blog.tikenix.me
+
+sudo usermod --shell /usr/local/bin/sftponly tikenix.zonedns.education
 
 
 
