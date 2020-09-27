@@ -78,4 +78,45 @@
 		- mysqlnd.debug = /var/log/php-mysql
 	- sudo systemctl restart apache2 && sudo systemctl restart mysql
 
+# Installation de base de données
+
+- ## Installer phpmyadmin
+
+	- sudo apt-get install phpmyadmin
+	- Sélectionner apache dans la liste (avec tab et “space” sur apache)
+	- sudo nano /etc/apache2/apache2.conf
+	- Include /etc/phpmyadmin/apache.conf  (à la fin si pas déjà là)
+	- sudo service apache2 restart
+
+- ## Tester phpmyadmin
+
+	- 51.161.33.181/phpmyadmin
+
+# Configuration des Vhosts
+
+- ## préparer l'espace
+
+	- sudo mkdir /var/www/tikenix.me/
+	- sudo mkdir /var/www/wiki.tikenix.me/
+	- sudo mkdir /var/www/blog.tikenix.me/
+	- sudo mkdir /var/www/tikenix.zonedns.education/
+
+- ## ajouter le fichier de configuration
+
+	- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/tikenix.me.conf
+	- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/wiki.tikenix.me.conf			![](/images/config_exemple.png)
+	- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/blog.tikenix.conf
+	- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/tikenix.zonedns.education.conf
+
+- ## activer le nouveau site
+
+	- sudo a2ensite tikenix.me.conf
+	- sudo a2ensite wiki.tikenix.me.conf
+	- sudo a2ensite blog.tikenix.conf
+	- sudo a2ensite tikenix.zonedns.education.conf
+	- sudo systemctl reload apache2
+
+
+
+
 
