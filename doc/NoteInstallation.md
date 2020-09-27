@@ -122,13 +122,13 @@
 
 # Créer des webmestres
 
-| User 1                                  | password 2              | Site associé(*propriété*) 3                                                |
-|: -------------------------------------: |: ---------------------: |: -------------------------------------------------------------------------: |
-| 1 sudo useradd webmestre                | 1 sudo passwd "password"| 1 sudo chown webmestre /var/www/                                            |
-| 2 sudo useradd tikenix.me               | 2 sudo passwd "password"| 2 sudo chown -R tikenix.me  /var/www/tikenix.me                             |
-| 3 sudo useradd wiki.tikenix.me          | 3 sudo passwd "password"| 3 sudo chown -R wiki.tikenix.me /var/www/wiki.tikenix.me                    |
-| 4 sudo useradd blog.tikenix.me          | 4 sudo passwd "password"| 4 sudo chown -R blog.tikenix.me /var/www/blog.tikenix.me                    |
-| 5 sudo useradd tikenix.zonedns.education| 5 sudo passwd "password"| 5 sudo chown -R tikenix.zonedns.education /var/www/tikenix.zonedns.education|
+User password Site associé(*propriété*)
+
+sudo useradd webmestre                 sudo passwd "password" sudo chown webmestre /var/www/
+sudo useradd tikenix.me                sudo passwd "password" sudo chown -R tikenix.me  /var/www/tikenix.me
+sudo useradd wiki.tikenix.me           sudo passwd "password" sudo chown -R wiki.tikenix.me /var/www/wiki.tikenix.me
+sudo useradd blog.tikenix.me           sudo passwd "password" sudo chown -R blog.tikenix.me /var/www/blog.tikenix.me
+sudo useradd tikenix.zonedns.education sudo passwd "password" sudo chown -R tikenix.zonedns.education /var/www/tikenix.zonedns.education
 
 
 
