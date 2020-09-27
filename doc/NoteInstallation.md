@@ -108,7 +108,8 @@
 	- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/blog.tikenix.conf
 	- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/tikenix.zonedns.education.conf
 
-Exemple de fichier de configuration : ![](https://github.com/cegepmatane/projet-serveur-web-2020-KennyMarechal-1/blob/master/doc/images/config_exemple.png)
+Exemple de fichier de configuration : 
+	- ![](https://github.com/cegepmatane/projet-serveur-web-2020-KennyMarechal-1/blob/master/doc/images/config_exemple.png)
 
 
 
